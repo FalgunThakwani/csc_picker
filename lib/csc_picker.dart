@@ -199,8 +199,11 @@ class _CSCPickerState extends State<CSCPicker> {
               )
             : Column(
                 children: [
+                  Padding(padding:EdgeInsets.only(top:10,left:20),child:Text("Current Country",style:TextStyle(fontSize:10,fontWeight:FontWeight.bold))),
                   Padding(padding:EdgeInsets.only(top:10),child:countryDropdown()),
+                  Padding(padding:EdgeInsets.only(top:10,left:20),child:Text("Current State",style:TextStyle(fontSize:10,fontWeight:FontWeight.bold))),
                   Padding(padding:EdgeInsets.only(top:10),child:stateDropdown()),
+                  Padding(padding:EdgeInsets.only(top:10,left:20),child:Text("Current City",style:TextStyle(fontSize:10,fontWeight:FontWeight.bold))),
                   Padding(padding:EdgeInsets.only(top:10),child:cityDropdown())
                 ],
               ),
