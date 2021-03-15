@@ -38,7 +38,7 @@ class DropdownWithSearch<T> extends StatelessWidget {
             onChanged(value);
           });
         },
-        child: Container(
+        child:Container(
           height: 50,
           margin: EdgeInsets.only(right: 30),
           decoration: BoxDecoration(
