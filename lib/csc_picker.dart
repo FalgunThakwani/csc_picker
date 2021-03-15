@@ -38,9 +38,9 @@ class _CSCPickerState extends State<CSCPicker> {
   List<String> _country = [];
   List<String> _states = [];
 
-  String _selectedCity = "City";
-  String _selectedCountry = "Country";
-  String _selectedState = "State";
+  String _selectedCity = "";
+  String _selectedCountry = "";
+  String _selectedState = "";
   var responses;
 
   @override
