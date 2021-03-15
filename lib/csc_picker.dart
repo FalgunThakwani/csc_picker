@@ -199,12 +199,33 @@ class _CSCPickerState extends State<CSCPicker> {
               )
             : Column(
                 children: [
-                  Padding(padding:EdgeInsets.only(top:10,left:20),child:Text("Current Country",style:TextStyle(fontSize:10,fontWeight:FontWeight.bold))),
-                  Padding(padding:EdgeInsets.only(top:10),child:countryDropdown()),
-                  Padding(padding:EdgeInsets.only(top:10,left:20),child:Text("Current State",style:TextStyle(fontSize:10,fontWeight:FontWeight.bold))),
-                  Padding(padding:EdgeInsets.only(top:10),child:stateDropdown()),
-                  Padding(padding:EdgeInsets.only(top:10,left:20),child:Text("Current City",style:TextStyle(fontSize:10,fontWeight:FontWeight.bold))),
-                  Padding(padding:EdgeInsets.only(top:10),child:cityDropdown())
+                  Container(
+                    child: Text(
+                      "Current Country",
+                      style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                    ),
+                    alignment: Alignment.centerLeft,
+                    padding: EdgeInsets.only(left: 20, top: 30),
+                  ),
+                  Padding(padding:EdgeInsets.only(),child:countryDropdown()),
+                  Container(
+                    child: Text(
+                      "Current State",
+                      style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                    ),
+                    alignment: Alignment.centerLeft,
+                    padding: EdgeInsets.only(left: 20, top: 30),
+                  ),
+                  Padding(padding:EdgeInsets.only(),child:stateDropdown()),
+                  Container(
+                    child: Text(
+                      "Current City",
+                      style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                    ),
+                    alignment: Alignment.centerLeft,
+                    padding: EdgeInsets.only(left: 20, top: 30),
+                  ),
+                  Padding(padding:EdgeInsets.only(),child:cityDropdown())
                 ],
               ),
       ],
