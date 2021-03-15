@@ -205,7 +205,7 @@ class _CSCPickerState extends State<CSCPicker> {
                       style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                     ),
                     alignment: Alignment.centerLeft,
-                    padding: EdgeInsets.only(left: 20, top: 30),
+                    padding: EdgeInsets.only(left: 20, top: 10),
                   ),
                   Padding(padding:EdgeInsets.only(),child:countryDropdown()),
                   Container(
@@ -214,7 +214,7 @@ class _CSCPickerState extends State<CSCPicker> {
                       style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                     ),
                     alignment: Alignment.centerLeft,
-                    padding: EdgeInsets.only(left: 20, top: 30),
+                    padding: EdgeInsets.only(left: 20, top: 10),
                   ),
                   Padding(padding:EdgeInsets.only(),child:stateDropdown()),
                   Container(
@@ -223,7 +223,7 @@ class _CSCPickerState extends State<CSCPicker> {
                       style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                     ),
                     alignment: Alignment.centerLeft,
-                    padding: EdgeInsets.only(left: 20, top: 30),
+                    padding: EdgeInsets.only(left: 20, top: 10),
                   ),
                   Padding(padding:EdgeInsets.only(),child:cityDropdown())
                 ],
