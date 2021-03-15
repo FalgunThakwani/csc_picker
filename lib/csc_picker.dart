@@ -200,7 +200,7 @@ class _CSCPickerState extends State<CSCPicker> {
             : Column(
                 children: [
                   Padding(padding:EdgeInsets.only(top:10),child:countryDropdown()),
-                  Padding(padding:EdgeInsets.only(top:10),child:stateDropdown()()),
+                  Padding(padding:EdgeInsets.only(top:10),child:stateDropdown()),
                   Padding(padding:EdgeInsets.only(top:10),child:cityDropdown())
                 ],
               ),
