@@ -39,16 +39,13 @@ class DropdownWithSearch<T> extends StatelessWidget {
           });
         },
         child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-          decoration: disabled
-              ? BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(5)),
-                  color: Colors.grey.shade300,
-                  border: Border.all(color: Colors.grey.shade300, width: 1))
-              : BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(5)),
-                  color: Colors.white,
-                  border: Border.all(color: Colors.grey.shade300, width: 1)),
+          height: 50,
+          margin: EdgeInsets.only(right: 30),
+          decoration: BoxDecoration(
+              color: Colors.pink.shade50,
+              borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(30),
+                  bottomRight: Radius.circular(30))),
           child: Row(
             children: [
               Expanded(
