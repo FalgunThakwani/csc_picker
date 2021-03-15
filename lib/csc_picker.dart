@@ -255,7 +255,15 @@ class _CSCPickerState extends State<CSCPicker> {
 
   ///Country Dropdown Widget
   Widget countryDropdown() {
-    return DropdownWithSearch(
+    return Container(
+        height: 50,
+        margin: EdgeInsets.only(right: 30),
+    decoration: BoxDecoration(
+    color: Colors.pink.shade50,
+    borderRadius: BorderRadius.only(
+    topRight: Radius.circular(30),
+    bottomRight: Radius.circular(30))),
+    child: DropdownWithSearch(
       title: "Country",
       placeHolder: "Search Country",
       disabled: _country.length == 0 ? true : false,
@@ -264,12 +272,20 @@ class _CSCPickerState extends State<CSCPicker> {
       }).toList(),
       selected: _selectedCountry != null ? _selectedCountry : "Country",
       onChanged: (value) => _onSelectedCountry(value),
-    );
+    ));
   }
 
   ///State Dropdown Widget
   Widget stateDropdown() {
-    return DropdownWithSearch(
+    return Container(
+        height: 50,
+        margin: EdgeInsets.only(right: 30),
+    decoration: BoxDecoration(
+    color: Colors.pink.shade50,
+    borderRadius: BorderRadius.only(
+    topRight: Radius.circular(30),
+    bottomRight: Radius.circular(30))),
+    child: DropdownWithSearch(
       title: "State",
       placeHolder: "Search Country",
       disabled: _states.length == 0 ? true : false,
@@ -278,12 +294,20 @@ class _CSCPickerState extends State<CSCPicker> {
       }).toList(),
       selected: _selectedState != null ? _selectedState : "State",
       onChanged: (value) => _onSelectedState(value),
-    );
+    ));
   }
 
   ///City Dropdown Widget
   Widget cityDropdown() {
-    return DropdownWithSearch(
+    return  Container(
+        height: 50,
+        margin: EdgeInsets.only(right: 30),
+    decoration: BoxDecoration(
+    color: Colors.pink.shade50,
+    borderRadius: BorderRadius.only(
+    topRight: Radius.circular(30),
+    bottomRight: Radius.circular(30))),
+    child:DropdownWithSearch(
       title: "City",
       placeHolder: "Search City",
       disabled: _cities.length == 0 ? true : false,
@@ -292,6 +316,6 @@ class _CSCPickerState extends State<CSCPicker> {
       }).toList(),
       selected: _selectedCity != null ? _selectedCity : "City",
       onChanged: (value) => _onSelectedCity(value),
-    );
+    ));
   }
 }
