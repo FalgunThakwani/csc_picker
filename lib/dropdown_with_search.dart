@@ -51,6 +51,7 @@ class DropdownWithSearch<T> extends StatelessWidget {
               Expanded(
                   child: Text(
                 selected.toString(),
+                style:TextStyle(color:Colors.white),
                 overflow: TextOverflow.ellipsis,
               )),
             ],
