@@ -53,7 +53,6 @@ class DropdownWithSearch<T> extends StatelessWidget {
                 selected.toString(),
                 overflow: TextOverflow.ellipsis,
               )),
-              Icon(Icons.keyboard_arrow_down_rounded)
             ],
           ),
         ),

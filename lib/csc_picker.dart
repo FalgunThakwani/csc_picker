@@ -199,20 +199,9 @@ class _CSCPickerState extends State<CSCPicker> {
               )
             : Column(
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Expanded(child: countryDropdown()),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Expanded(child: stateDropdown()),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 10.0,
-                  ),
-                  cityDropdown()
+                  Padding(padding:EdgeInsets.only(top:10),child:countryDropdown()),
+                  Padding(padding:EdgeInsets.only(top:10),child:stateDropdown()()),
+                  Padding(padding:EdgeInsets.only(top:10),child:cityDropdown())
                 ],
               ),
       ],
@@ -256,8 +245,8 @@ class _CSCPickerState extends State<CSCPicker> {
   ///Country Dropdown Widget
   Widget countryDropdown() {
     return DropdownWithSearch(
-      title: "Country",
-      placeHolder: "Search Country",
+      title: "",
+      placeHolder: "",
       disabled: _country.length == 0 ? true : false,
       items: _country.map((String dropDownStringItem) {
         return dropDownStringItem;
@@ -270,8 +259,8 @@ class _CSCPickerState extends State<CSCPicker> {
   ///State Dropdown Widget
   Widget stateDropdown() {
     return DropdownWithSearch(
-      title: "State",
-      placeHolder: "Search Country",
+      title: "",
+      placeHolder: "",
       disabled: _states.length == 0 ? true : false,
       items: _states.map((String dropDownStringItem) {
         return dropDownStringItem;
@@ -284,8 +273,8 @@ class _CSCPickerState extends State<CSCPicker> {
   ///City Dropdown Widget
   Widget cityDropdown() {
     return DropdownWithSearch(
-      title: "City",
-      placeHolder: "Search City",
+      title: "",
+      placeHolder: "",
       disabled: _cities.length == 0 ? true : false,
       items: _cities.map((String dropDownStringItem) {
         return dropDownStringItem;
