@@ -42,7 +42,7 @@ class DropdownWithSearch<T> extends StatelessWidget {
           height: 40,
           margin: EdgeInsets.only(right: 10),
           decoration: BoxDecoration(
-              color: Colors.pink.shade50,
+              color: Color.fromARGB(255,218, 146, 178),
               borderRadius: BorderRadius.only(
                   topRight: Radius.circular(30),
                   bottomRight: Radius.circular(30))),
